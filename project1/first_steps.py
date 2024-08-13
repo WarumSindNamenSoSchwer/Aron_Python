@@ -1,6 +1,4 @@
-x = 2
+#creating functions
 
-y = int(input("input number 2: "))
-
-print(x + y)
-
+def first_function(name: str) -> None:
+    print(name)
