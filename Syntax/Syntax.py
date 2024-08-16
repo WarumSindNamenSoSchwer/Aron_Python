@@ -51,6 +51,10 @@ for assigning values.
 In order to add logic to your code, we have so called if-statements 
 if-statements are often used together with comparrison operators
 """
+
+arbitary_variable_1: int = 1
+arbitary_variable_2: int = 3
+
 # Example if-statement
 if arbitary_variable_1 >= arbitary_variable_2:
     print("Cock")
@@ -68,7 +72,7 @@ if you want to eval more arguments you can use the elif or else keyword these fo
 when the one before them evaluates to false
 """
 # Example if-statement with eilf and else
-if arbitary_variable_1 >= arbitary_variable_2:
+if arbitary_variable_1 > arbitary_variable_2:
     print("Cock")
 elif arbitary_variable_1 == arbitary_variable_2:
     print("elif")
@@ -98,6 +102,13 @@ the most basic function is a greeting function were you can enter the name and i
 # Function definition and declaration
 def greeting_func(name: str) -> None:
     print("Hello" , name)
+
+
+def return_func(num: int) -> int:
+    return num
+
+number = return_func(4)
+#number is now equal to 4
 
 # Function call
 greeting_func("Muri")
